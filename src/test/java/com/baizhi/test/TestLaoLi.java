@@ -7,5 +7,7 @@ public class TestLaoLi {
 
         System.out.println("这踏马可咋整啊");
 
+        System.out.println("今天是星期三");
+
     }
 }
