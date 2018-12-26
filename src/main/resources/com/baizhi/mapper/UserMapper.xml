@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserDao">
+
+    <resultMap type="User" id="allUser">
+        <id property="userId" column="id"/>
+        <result property="userName" column="username"/>
+        <result property="password" column="password"/>
+        <result property="salary" column="salary"/>
+    </resultMap>
+
+    <!-- 手动映射 -->
+    <select id="selectAllUser" resultMap="allUser">
+      select * from user
+    </select>
+
+
+</mapper>
